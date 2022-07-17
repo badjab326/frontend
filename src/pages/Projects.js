@@ -24,10 +24,11 @@ const Projects = (props) => {
             <div>
                 <h1>{project.name}</h1>
                 <img src={project.image} alt={project.name}/>
-                <a href={project.git}>
+                <br />
+                <a target="_blank" href={project.git}>
                     <button>Github</button>
                 </a>
-                <a href={project.live}>
+                <a target="_blank" href={project.live}>
                     <button>Live Site</button>
                 </a>
             </div>
