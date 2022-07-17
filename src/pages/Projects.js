@@ -1,8 +1,14 @@
 import { useState, useEffect } from 'react';
+import Modal from 'react-modal';
+import ReactDOM from 'react-dom';
 
 const Projects = (props) => {
     // Create state to hold projects
     const [projects, setProjects] = useState(null);
+    const [modalIsOpen, setIsOpen] = useState(false);
+    const [projectUrl, setProjectUrl] = useState('');
+    let subtitle;
+    
 
     // Create function to make api call
     const getProjectsData = async () => {
@@ -18,12 +24,30 @@ const Projects = (props) => {
     useEffect(() => {  getProjectsData()
     }, [])
 
+Modal.setAppElement(document.getElementById('container'));
+  
+    function openModal(newProjectUrl) {
+        setProjectUrl(newProjectUrl)
+        console.log(newProjectUrl)
+      setIsOpen(true);
+    }
+  
+    function afterOpenModal() {
+      // references are now sync'd and can be accessed.
+      subtitle.style.color = '#f00';
+    }
+  
+    function closeModal() {
+      setIsOpen(false);
+    }
+
     // Define function to return JSX needed upon data retrieval
     const loaded = () => {
-        return projects.map((project) => (
-            <div>
+
+        const projectGrid = projects.map((project) => (
+            <div className='item'>
                 <h1>{project.name}</h1>
-                <img src={project.image} alt={project.name}/>
+                <img onClick={() => openModal(project.live)} className='projectPics' src={project.image} alt={project.name}/>
                 <br />
                 <a target="_blank" href={project.git}>
                     <button>Github</button>
@@ -33,9 +57,22 @@ const Projects = (props) => {
                 </a>
             </div>
         ))
-    }
 
-    return projects ? loaded() : <h1>Now Loading...</h1>;
+        return (
+        <div className="container" id='container'>
+            {projectGrid}
+            <Modal
+                    isOpen={modalIsOpen}
+                    onAfterOpen={afterOpenModal}
+                    onRequestClose={closeModal}
+                    contentLabel="Example Modal"
+                >       
+                <iframe className="iframe" src={projectUrl} title="Project"></iframe>
+              </Modal>
+        </div>
+    )}
+
+    return projects ? loaded() : <></>;
   }
   
   export default Projects;

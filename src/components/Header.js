@@ -4,16 +4,18 @@ const Header = (props) => {
 
     return (
         <header>
-            <h1>Julian Beard</h1>
             <nav className="nav">
-                <Link to='/'>
-                    <div>HOME</div>
+                <Link to='/' className='links'>
+                <button className="button-75" role="button"><span className="text">Home</span></button>
                 </Link>
-                <Link to='/about'>
-                    <div>ABOUT</div>
+                <Link to='/about' className='links'>
+                <button className="button-75" role="button"><span className="text">About</span></button>
                 </Link>
-                <Link to='/projects'>
-                    <div>PROJECTS</div>
+                <Link to='/projects' className='links'>
+                <button className="button-75" role="button"><span className="text">Projects</span></button>
+                </Link>
+                <Link to='/contact' className='links'>
+                <button className="button-75" role="button"><span className="text">Contact</span></button>
                 </Link>
             </nav>
         </header>

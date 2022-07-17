@@ -27,7 +27,7 @@ const About = (props) => {
     )
 
     // If data arrives return loaded() if not, Now Loading...
-    return about ? loaded() : <h1>Loading...</h1>;
+    return about ? loaded() : <></>;
   }
   
   export default About;

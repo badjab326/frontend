@@ -3,10 +3,13 @@ import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import { Route } from 'react-router-dom';
+import background from './images/background.mp4';
 // Import Pages
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
+import Contact from './pages/Contact';
+import { faImages } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
 
@@ -23,6 +26,12 @@ function App() {
       <Route path="/about">
         <About URL={URL} />
       </Route>
+      <Route path="/contact">
+        <Contact URL={URL} />
+      </Route>
+      <video autoPlay muted loop id="myVideo">
+        <source src={background} type="video/mp4" />
+      </video>
       <Footer />
     </div>
   );

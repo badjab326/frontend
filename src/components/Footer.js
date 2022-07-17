@@ -1,5 +1,5 @@
 const Footer = (props) => {
-    return     <footer class="page-footer">
+    return     <footer className="page-footer">
     All Rights Reserved, © 2022 Julian Beard
   </footer>;
   }
