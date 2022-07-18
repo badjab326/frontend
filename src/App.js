@@ -16,6 +16,7 @@ function App() {
   const URL = "https://jbpfbackend.herokuapp.com/"
   return (
     <div className="App">
+      <div className="bgdarken">
       <Header />
       <Route exact path ="/">
         <Home />
@@ -29,10 +30,11 @@ function App() {
       <Route path="/contact">
         <Contact URL={URL} />
       </Route>
+      <Footer />
+      </div>
       <video autoPlay muted loop id="myVideo">
         <source src={background} type="video/mp4" />
       </video>
-      <Footer />
     </div>
   );
 }

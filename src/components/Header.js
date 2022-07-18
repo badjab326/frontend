@@ -5,9 +5,12 @@ const Header = (props) => {
     return (
         <header>
             <nav className="nav">
-                <Link to='/' className='links'>
-                <button className="button-75" role="button"><span className="text">Home</span></button>
-                </Link>
+                <div className="left">
+                    <Link to='/' className='links'>
+                        <button className="button-75" role="button"><span className="text">Home</span></button>
+                    </Link>
+                </div>
+                <div className='right'>
                 <Link to='/about' className='links'>
                 <button className="button-75" role="button"><span className="text">About</span></button>
                 </Link>
@@ -17,6 +20,7 @@ const Header = (props) => {
                 <Link to='/contact' className='links'>
                 <button className="button-75" role="button"><span className="text">Contact</span></button>
                 </Link>
+                </div>
             </nav>
         </header>
     );

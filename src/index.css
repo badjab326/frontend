@@ -1,10 +1,23 @@
+.bgdarken {
+  background-color: rgba(0, 0, 0, 0.364);
+  height: 115vh;
+  z-index: -99;
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: rgb(215, 199, 252)
+}
+
+header {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  background-color: rgb(0, 0, 0, 0.5);
 }
 
 #myVideo {
@@ -16,6 +29,13 @@ body {
   z-index: -100;
 }
 
+.bio {
+  background-color: rgb(0, 0, 0, 0.8);
+  width: 50vw;
+  margin: 0 auto;
+  padding: 20px;
+}
+
 .container {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -25,8 +45,15 @@ body {
 
 .projectPics {
   max-width: 35vw;
+  border: 4px solid rgb(132, 0, 197);
 }
 
+.description {
+  max-width: 35vw;
+  background-color: rgb(0, 0, 0, 0.8);
+  padding: 10px;
+  margin: 0 auto;
+}
 
 .ReactModal__Overlay {
   -webkit-perspective: 600;
@@ -96,17 +123,26 @@ code {
     monospace;
 }
 
-nav {
+.nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   border: 3px, solid black;
   padding: 8px;
   width: 90%;
   margin: auto;
 }
 
+.right {
+  display: flex;
+}
+
+.left {
+  display: flex;
+}
+
 .links {
   text-decoration: none;
+  padding: 3px;
 }
 
 .button-75 {
@@ -122,7 +158,7 @@ nav {
   font-family: "Codec cold",sans-serif;
   font-size: 16px;
   font-weight: 700;
-  height: 54px;
+  height: 3vh;
   justify-content: center;
   letter-spacing: .4px;
   line-height: 1;
@@ -150,7 +186,7 @@ nav {
 }
 
 .button-75:hover span {
-  transform: scale(.9);
+  transform: scale(1.1);
   opacity: .75;
 }
 

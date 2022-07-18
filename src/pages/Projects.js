@@ -47,8 +47,9 @@ Modal.setAppElement(document.getElementById('container'));
         const projectGrid = projects.map((project) => (
             <div className='item'>
                 <h1>{project.name}</h1>
-                <img onClick={() => openModal(project.live)} className='projectPics' src={project.image} alt={project.name}/>
+                    <img onClick={() => openModal(project.live)} className='projectPics' src={project.image} alt={project.name}/>
                 <br />
+                <p className="description">{project.description}</p>
                 <a target="_blank" href={project.git}>
                     <button>Github</button>
                 </a>
