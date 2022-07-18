@@ -31,10 +31,10 @@ function App() {
         <Contact URL={URL} />
       </Route>
       <Footer />
-      </div>
       <video autoPlay muted loop id="myVideo">
         <source src={background} type="video/mp4" />
       </video>
+      </div>
     </div>
   );
 }

@@ -60,6 +60,8 @@ Modal.setAppElement(document.getElementById('container'));
         ))
 
         return (
+        <div>
+        <h1 className="projTitle">PROJECTS</h1>
         <div className="container" id='container'>
             {projectGrid}
             <Modal
@@ -70,6 +72,7 @@ Modal.setAppElement(document.getElementById('container'));
                 >       
                 <iframe className="iframe" src={projectUrl} title="Project"></iframe>
               </Modal>
+        </div>
         </div>
     )}
 

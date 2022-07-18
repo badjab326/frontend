@@ -1,6 +1,6 @@
 .bgdarken {
   background-color: rgba(0, 0, 0, 0.364);
-  height: 115vh;
+  background-size: cover;
   z-index: -99;
   display: flex;
   flex-direction: column;
@@ -17,7 +17,8 @@ body {
 header {
   padding-top: 1px;
   padding-bottom: 1px;
-  background-color: rgb(0, 0, 0, 0.5);
+  background-color: rgb(0, 0, 0, 0.6);
+  box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #ad00e6, 0 0 50px #9200e6;
 }
 
 #myVideo {
@@ -29,11 +30,49 @@ header {
   z-index: -100;
 }
 
+.about {
+  padding: 30px;
+}
+
+/* .techUsed {
+
+} */
+
+.headshot {
+  border-radius: 50%;
+  max-width: 35vh;
+  border: 4px solid rgb(132, 0, 197);
+  box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #ad00e6, 0 0 50px #9200e6;
+}
+
+.name {
+  font-size: 5vh;
+  font-weight: bolder;
+}
+
 .bio {
-  background-color: rgb(0, 0, 0, 0.8);
+  background-color: rgb(0, 0, 0, 0.6);
   width: 50vw;
   margin: 0 auto;
   padding: 20px;
+  border-radius: 9%;
+}
+
+.techIcon {
+  max-width: 5vw;
+  padding: 2px;
+}
+
+.techIcon:hover {
+  transform: scale(1.2);
+  transition: all 200ms;
+}
+
+.projTitle {
+  font-size: 10vh;
+  padding: 0;
+  margin-top: 20px;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #ad00e6, 0 0 50px #9200e6;
 }
 
 .container {
@@ -44,14 +83,17 @@ header {
 }
 
 .projectPics {
-  max-width: 35vw;
+  width: 35vw;
   border: 4px solid rgb(132, 0, 197);
 }
 
 .description {
-  max-width: 35vw;
+  width: 35vw;
   background-color: rgb(0, 0, 0, 0.8);
-  padding: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin: 0 auto;
 }
 
@@ -59,6 +101,7 @@ header {
   -webkit-perspective: 600;
   perspective: 600;
   opacity: 0;
+  background-color: rgb(0 0 0 / 75%) !important;
 }
 
 .ReactModal__Overlay--after-open {
@@ -146,7 +189,7 @@ code {
 
 .button-75 {
   align-items: center;
-  background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
+  background-image: linear-gradient(135deg, #f34079 40%, #870389);
   border: 0;
   border-radius: 10px;
   box-sizing: border-box;
