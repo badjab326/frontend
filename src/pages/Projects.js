@@ -8,7 +8,7 @@ const Projects = (props) => {
     const [modalIsOpen, setIsOpen] = useState(false);
     const [projectUrl, setProjectUrl] = useState('');
     let subtitle;
-    
+
 
     // Create function to make api call
     const getProjectsData = async () => {
@@ -21,24 +21,25 @@ const Projects = (props) => {
     };
 
     // Make initial call for data inside useEffect, happens once on load
-    useEffect(() => {  getProjectsData()
+    useEffect(() => {
+        getProjectsData()
     }, [])
 
-Modal.setAppElement(document.getElementById('container'));
-  
+    Modal.setAppElement(document.getElementById('container'));
+
     function openModal(newProjectUrl) {
         setProjectUrl(newProjectUrl)
         console.log(newProjectUrl)
-      setIsOpen(true);
+        setIsOpen(true);
     }
-  
+
     function afterOpenModal() {
-      // references are now sync'd and can be accessed.
-      subtitle.style.color = '#f00';
+        // references are now sync'd and can be accessed.
+        subtitle.style.color = '#f00';
     }
-  
+
     function closeModal() {
-      setIsOpen(false);
+        setIsOpen(false);
     }
 
     // Define function to return JSX needed upon data retrieval
@@ -46,37 +47,38 @@ Modal.setAppElement(document.getElementById('container'));
 
         const projectGrid = projects.map((project) => (
             <div className='item'>
-                <h1>{project.name}</h1>
-                    <img onClick={() => openModal(project.live)} className='projectPics' src={project.image} alt={project.name}/>
+                <h1 className='projName'>{project.name}</h1>
+                <img onClick={() => openModal(project.live)} className='projectPics' src={project.image} alt={project.name} />
                 <br />
                 <p className="description">{project.description}</p>
                 <a target="_blank" href={project.git}>
-                    <button>Github</button>
+                    <img className="icons" src="https://cdn.discordapp.com/attachments/274665064630583297/998715710316478564/github.png"></img>
                 </a>
                 <a target="_blank" href={project.live}>
-                    <button>Live Site</button>
+                <img className="icons" src="https://cdn.discordapp.com/attachments/274665064630583297/998721076584529990/www.png"></img>
                 </a>
             </div>
         ))
 
         return (
-        <div>
-        <h1 className="projTitle">PROJECTS</h1>
-        <div className="container" id='container'>
-            {projectGrid}
-            <Modal
-                    isOpen={modalIsOpen}
-                    onAfterOpen={afterOpenModal}
-                    onRequestClose={closeModal}
-                    contentLabel="Example Modal"
-                >       
-                <iframe className="iframe" src={projectUrl} title="Project"></iframe>
-              </Modal>
-        </div>
-        </div>
-    )}
+            <div className='projects'>
+                <h1 className="projTitle">PROJECTS</h1>
+                <div className="container" id='container'>
+                    {projectGrid}
+                    <Modal
+                        isOpen={modalIsOpen}
+                        onAfterOpen={afterOpenModal}
+                        onRequestClose={closeModal}
+                        contentLabel="Example Modal"
+                    >
+                        <iframe className="iframe" src={projectUrl} title="Project"></iframe>
+                    </Modal>
+                </div>
+            </div>
+        )
+    }
 
     return projects ? loaded() : <></>;
-  }
-  
-  export default Projects;
+}
+
+export default Projects;

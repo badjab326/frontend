@@ -3,7 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import { Route } from 'react-router-dom';
-import background from './images/background.mp4';
+import background from './images/background2.mov';
 // Import Pages
 import Home from './pages/Home';
 import About from './pages/About';
@@ -24,7 +24,7 @@ function App() {
       <Route path="/projects">
         <Projects URL={URL} />
       </Route>
-      <Route path="/about">
+      <Route exact path="/">
         <About URL={URL} />
       </Route>
       <Route path="/contact">
