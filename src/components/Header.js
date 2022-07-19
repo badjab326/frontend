@@ -7,7 +7,7 @@ const Header = (props) => {
             <nav className="nav">
                 <div className="left">
                     <Link to='/' className='links'>
-                        <button className="button-75" role="button"><span className="text">Home</span></button>
+                        <img className="logo" src="https://cdn.discordapp.com/attachments/944706362288517200/998785650419581038/icons2.png"/>
                     </Link>
                 </div>
                 <div className='right'>
