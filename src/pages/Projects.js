@@ -69,7 +69,7 @@ const Projects = (props) => {
                         isOpen={modalIsOpen}
                         onAfterOpen={afterOpenModal}
                         onRequestClose={closeModal}
-                        contentLabel="Example Modal"
+                        contentLabel="Project Demo"
                     >
                         <iframe className="iframe" src={projectUrl} title="Project"></iframe>
                     </Modal>
