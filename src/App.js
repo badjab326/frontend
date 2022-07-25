@@ -17,9 +17,9 @@ function App() {
     <div className="App">
       <div className="bgdarken">
       <Header />
-      <Route exact path ="/">
+      {/* <Route exact path ="/">
         <Home />
-      </Route>
+      </Route> */}
       <Route path="/projects">
         <Projects URL={URL} />
       </Route>
