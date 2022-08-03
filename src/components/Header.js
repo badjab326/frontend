@@ -7,18 +7,18 @@ const Header = (props) => {
             <nav className="nav">
                 <div className="left">
                     <Link to='/' className='links'>
-                        <img className="logo" src="https://cdn.discordapp.com/attachments/944706362288517200/998785650419581038/icons2.png"/>
+                        <img className="logo" alt="home" src="https://cdn.discordapp.com/attachments/944706362288517200/998785650419581038/icons2.png"/>
                     </Link>
                 </div>
                 <div className='right'>
                     <Link to='/projects' className='links'>
-                        <button className="button-75" role="button"><span className="text">Projects</span></button>
+                        <button className="button-75"><span className="text">Projects</span></button>
                     </Link>
                     <Link to='/contact' className='links'>
-                        <button className="button-75" role="button"><span className="text">Contact</span></button>
+                        <button className="button-75"><span className="text">Contact</span></button>
                     </Link>
                     <a href="/JulianBeard_ATSResume.pdf" target="_blank" className='links'>
-                        <button className="button-75" role="button"><span className="text">Resume</span></button>
+                        <button className="button-75"><span className="text">Resume</span></button>
                         </a>
                 </div>
             </nav>

@@ -10,6 +10,7 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 
+
 function App() {
 
   const URL = "https://jbpfbackend.herokuapp.com/"
