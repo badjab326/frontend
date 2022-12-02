@@ -13,7 +13,7 @@ import Contact from './pages/Contact';
 
 function App() {
 
-  const URL = "https://jbpfbackend.herokuapp.com/"
+  const URL = "https://web-production-5e35.up.railway.app/"
   return (
     <div className="App">
       <div className="bgdarken">
