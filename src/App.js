@@ -13,7 +13,6 @@ import Contact from './pages/Contact';
 
 function App() {
 
-  const URL = "https://web-production-5e35.up.railway.app/"
   return (
     <div className="App">
       <div className="bgdarken">
@@ -22,13 +21,13 @@ function App() {
         <Home />
       </Route> */}
       <Route path="/projects">
-        <Projects URL={URL} />
+        <Projects />
       </Route>
       <Route exact path="/">
-        <About URL={URL} />
+        <About />
       </Route>
       <Route path="/contact">
-        <Contact URL={URL} />
+        <Contact />
       </Route>
       <Footer />
       <video autoPlay muted loop id="myVideo">
