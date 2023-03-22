@@ -24,7 +24,7 @@ const Header = (props) => {
               <span className="text">Contact</span>
             </button>
           </Link>
-          <a href="/JulianBeard_AOResume.pdf" target="_blank" className="links">
+          <a href="/JulianBeard_ATSResume.pdf" target="_blank" className="links">
             <button className="button-75">
               <span className="text">Resume</span>
             </button>
