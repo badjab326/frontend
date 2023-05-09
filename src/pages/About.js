@@ -5,6 +5,7 @@ const About = () => {
     return (
         <div className='about'>
             <img className="headshot" src={AboutData.headshot} alt="Julian"/>
+            <div>{(() => true)()}</div>
             <h1 className="name">{AboutData.name}</h1>
             <p className="bio">{AboutData.bio}</p>
             <br />
