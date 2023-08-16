@@ -33,6 +33,7 @@ const Projects = () => {
                 <img onClick={() => openModal(project.live)} className='projectPics' src={project.image} alt={project.name} />
                 <br />
                 <p className="description">{project.description}</p>
+                <p className="description"><span className="techUsed">Tech Used:</span> {project.tech}</p>
                 <a target="_blank" rel="noreferrer" href={project.git}>
                     <img className="icons" src="https://cdn.discordapp.com/attachments/274665064630583297/998715710316478564/github.png" alt="GitHub Link"></img>
                 </a>

@@ -4,34 +4,39 @@
     "live": "https://what2play.netlify.app/",
     "git": "https://github.com/badjab326/project-1",
     "image": "https://cdn.discordapp.com/attachments/944706362288517200/998305568148181032/Screen_Shot_2022-07-17_at_12.09.32_PM.png",
-    "description": "A web based app that gives users a randomized game suggestion based on the genre they're in the mood for!"
+    "description": "A web app that gives users a randomized game suggestion based on the genre they're in the mood for!",
+    "tech": "JQuery, JavaScript, HTML, CSS"
   },
   {
     "name": "Collarchive",
     "live": "https://collarchive-production.up.railway.app/",
     "git": "https://github.com/badjab326/collarchive",
     "image": "https://github.com/badjab326/collarchive/raw/main/screenshots/Home.png",
-    "description": "A web app that gives users the ability to digitally log a physical collection they own. The demo features items from my own personal collection!"
+    "description": "A CRUD app that gives users the ability to digitally log a physical collection they own. The demo features items from my own personal collection!",
+    "tech": "EJS, Node.js, Mongoose, MongoDB, Express.js, JavaScript, HTML, CSS"
   },
   {
     "name": "Gym Planner",
     "live": "https://gymplanner.up.railway.app/",
     "git": "https://github.com/badjab326/gymplanner",
     "image": "https://cdn.discordapp.com/attachments/944706362288517200/997132437446475956/Screen_Shot_2022-07-14_at_6.27.20_AM.png",
-    "description": "A straightforward web based app that gives users the ability to digitally plan, track and optimize their workouts. Each signed in user will get their own database of manually entered routines and exercises."
+    "description": "A straightforward web app that gives users the ability to digitally plan, track and optimize their workouts. Each signed in user will get their own database of manually entered routines and exercises.",
+    "tech": "Django, Python, PostgreSQL, HTML, CSS"
   },
   {
     "name": "Avatar Yearbook",
     "live": "https://avatar-yearbook.netlify.app/",
     "git": "https://github.com/badjab326/ay-backend",
     "image": "https://user-images.githubusercontent.com/104465292/175374836-35985d5e-4911-44b5-9c22-7cdb6be774dc.png",
-    "description": "A digital yearbook for members of the General Assembly SEIR 'Avatar' Cohort."
+    "description": "A digital yearbook for members of the General Assembly SEIR 'Avatar' Cohort.",
+    "tech": "React.js, Node.js, Mongoose, MongoDB, Express.js, Google Firebase, JavaScript, HTML, CSS"
   },
   {
     "name": "Black In Gaming",
     "live": "https://black-in-gaming-production.up.railway.app/",
     "git": "https://github.com/badjab326/black-in-gaming",
     "image": "https://cdn.discordapp.com/attachments/944706362288517200/1085834372944502845/image.png",
-    "description": "A tribute to representation in gaming, and a detailed database of black characters featured in video games!"
+    "description": "A tribute to representation in gaming, and a detailed database of black characters featured in video games!",
+    "tech": "Angular, PayloadCMS, TypeScript, Mongoose, MongoDB, HTML, CSS"
   }
 ]

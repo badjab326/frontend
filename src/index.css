@@ -247,6 +247,11 @@ to   { opacity: 1; }
   margin: 0 auto;
 }
 
+.techUsed {
+  font-weight: bolder;
+  color: rgb(132, 0, 197);
+}
+
 .icons {
   width: 4vw;
   background-color: rgb(132, 0, 197);
