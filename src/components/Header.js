@@ -8,8 +8,9 @@ const Header = (props) => {
           <Link to="/" className="links">
             <img
               className="logo"
-              alt="home"
-              src="https://cdn.discordapp.com/attachments/944706362288517200/998785650419581038/icons2.png"
+              title="Home"
+              alt="Home"
+              src="/images/mainLogo.png"
             />
           </Link>
         </div>
