@@ -1,13 +1,11 @@
+import AboutData from "../data/about.json";
+
 const Contact = (props) => {
   return (
     <div className="contact">
       <h1 className="contactTitle">CONTACT ME</h1>
       <div className="contactInfo">
-        <a
-          href="https://www.linkedin.com/in/julian-a-beard/"
-          rel="noreferrer"
-          target="_blank"
-        >
+        <a href={AboutData.linkedin} rel="noreferrer" target="_blank">
           <img
             className="conLogo"
             src="/images/linkedInLogo.png"
@@ -15,7 +13,7 @@ const Contact = (props) => {
             alt="LinkedIn"
           />
         </a>
-        <a href="https://github.com/badjab326" rel="noreferrer" target="_blank">
+        <a href={AboutData.github} rel="noreferrer" target="_blank">
           <img
             className="conLogo"
             src="/images/githubLogo.png"
@@ -24,7 +22,7 @@ const Contact = (props) => {
           />
         </a>
         <br />
-        <a href="mailto:badjab326@gmail.com" rel="noreferrer" target="_blank">
+        <a href={"mailto:" + AboutData.email} rel="noreferrer" target="_blank">
           <img
             className="conLogo"
             src="/images/gmailLogo.png"
@@ -32,7 +30,7 @@ const Contact = (props) => {
             alt="E-Mail"
           />
         </a>
-        <a href="tel:5176264000">
+        <a href={"tel:" + AboutData.phone}>
           <img
             className="conLogo"
             src="/images/phoneLogo.png"

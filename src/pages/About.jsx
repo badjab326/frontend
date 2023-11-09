@@ -1,14 +1,14 @@
-import AboutData from '../data/about.json'
-import GitHubCalendar from 'react-github-calendar';
+import AboutData from "../data/about.json";
+import GitHubCalendar from "react-github-calendar";
 
 const About = () => {
-    return (
-        <div className='about'>
-            <img className="headshot" src={AboutData.headshot} alt="Julian"/>
-            <div>{(() => true)()}</div>
-            <h1 className="name">{AboutData.name}</h1>
-            <p className="bio">{AboutData.bio}</p>
-            {/* <br />
+  return (
+    <div className="about">
+      <img className="headshot" src={AboutData.headshot} alt="Julian" />
+      <div>{(() => true)()}</div>
+      <h1 className="name">{AboutData.name}</h1>
+      <p className="bio">{AboutData.bio}</p>
+      {/* <br />
             <div className="gitGraph">
             <GitHubCalendar
                 blockRadius={7}
@@ -22,7 +22,8 @@ const About = () => {
                 username="badjab326">
             </GitHubCalendar>
             </div> */}
-        </div>
-  )}
-  
-  export default About;
+    </div>
+  );
+};
+
+export default About;

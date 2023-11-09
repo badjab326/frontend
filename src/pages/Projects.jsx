@@ -59,11 +59,12 @@ const Projects = () => {
         alt={project.name}
       />
       <br />
-      <p className="description">{project.description}
-       <p className="techUsed">Tech Used</p>
+      <div className="description">
+        <p className="projDesc">{project.description}</p>
+       <p className="techUsed">Tech Stack</p>
       <div className="techGroup">{project.tech.map((techItem) => (techObj[techItem] && <p className="techText">{techObj[techItem]}<br />{techItem}</p>))}</div>
-      </p>
       
+      <p className="techLinks">Links</p>
       <a target="_blank" rel="noreferrer" href={project.git}>
         <img
           className="icons"
@@ -78,6 +79,7 @@ const Projects = () => {
           alt="Live Site Link"
         ></img>
       </a>
+      </div>
     </div>
   ));
 
