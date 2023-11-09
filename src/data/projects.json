@@ -5,7 +5,7 @@
     "git": "https://github.com/badjab326/project-1",
     "image": "/images/what2playSS.png",
     "description": "A web app that gives users a randomized game suggestion based on the genre they're in the mood for!",
-    "tech": "JQuery, JavaScript, HTML, CSS"
+    "tech": ["jQuery", "JavaScript", "HTML5", "CSS3"]
   },
   {
     "name": "Collarchive",
@@ -13,7 +13,16 @@
     "git": "https://github.com/badjab326/collarchive",
     "image": "/images/collarchiveSS.png",
     "description": "A CRUD app that gives users the ability to digitally log a physical collection they own. The demo features items from my own personal collection!",
-    "tech": "EJS, Node.js, Mongoose, MongoDB, Express.js, JavaScript, HTML, CSS"
+    "tech": [
+      "EJS",
+      "NodeJS",
+      "Mongoose",
+      "MongoDB",
+      "ExpressJS",
+      "JavaScript",
+      "HTML5",
+      "CSS3"
+    ]
   },
   {
     "name": "Gym Planner",
@@ -21,7 +30,7 @@
     "git": "https://github.com/badjab326/gymplanner",
     "image": "/images/gymPlannerSS.png",
     "description": "A straightforward web app that gives users the ability to digitally plan, track and optimize their workouts. Each signed in user will get their own database of manually entered routines and exercises.",
-    "tech": "Django, Python, PostgreSQL, HTML, CSS"
+    "tech": ["Django", "Python", "PostgreSQL", "HTML5", "CSS3"]
   },
   {
     "name": "Avatar Yearbook",
@@ -29,7 +38,17 @@
     "git": "https://github.com/badjab326/ay-backend",
     "image": "/images/avatarYearBookSS.png",
     "description": "A digital yearbook for members of the General Assembly SEIR 'Avatar' Cohort.",
-    "tech": "React.js, Node.js, Mongoose, MongoDB, Express.js, Google Firebase, JavaScript, HTML, CSS"
+    "tech": [
+      "React",
+      "NodeJS",
+      "Mongoose",
+      "MongoDB",
+      "ExpressJS",
+      "Firebase",
+      "JavaScript",
+      "HTML5",
+      "CSS3"
+    ]
   },
   {
     "name": "Black In Gaming",
@@ -37,6 +56,14 @@
     "git": "https://github.com/badjab326/black-in-gaming",
     "image": "/images/blackInGamingSS.png",
     "description": "A tribute to representation in gaming, and a detailed database of black characters featured in video games!",
-    "tech": "Angular, PayloadCMS, TypeScript, Mongoose, MongoDB, HTML, CSS"
+    "tech": [
+      "Angular",
+      "PayloadCMS",
+      "TypeScript",
+      "Mongoose",
+      "MongoDB",
+      "HTML5",
+      "CSS3"
+    ]
   }
 ]
