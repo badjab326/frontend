@@ -7,9 +7,10 @@ const About = () => {
       <img className="headshot" src={AboutData.headshot} alt="Julian" />
       <div>{(() => true)()}</div>
       <h1 className="name">{AboutData.name}</h1>
+      <h1 className="title">Full-Stack Engineer</h1>
       <p className="bio">{AboutData.bio}</p>
-      {/* <br />
-            <div className="gitGraph">
+      <br />
+            {/* <div className="gitGraph">
             <GitHubCalendar
                 blockRadius={7}
                 color={"purple"}
