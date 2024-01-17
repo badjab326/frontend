@@ -103,15 +103,13 @@ header {
 
 #myVideo {
   position: fixed;
-  top: 0;
-  bottom: 0;
   right: 0;
-  left: 0;
-  margin: auto;
+  bottom: 0;
   min-width: 100%;
   min-height: 100%;
+  transform: translateX(calc((100% - 100vw) / 2));
   z-index: -100;
-  filter: brightness(100%);
+  filter: brightness(30%);
 }
 
 .about {
@@ -178,15 +176,15 @@ header {
   border-radius: 50%;
   width: 200px;
   border: 0.3vw solid #fff;
-  box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #ad00e6,
-    0 0 50px #9200e6;
+  /* box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #ad00e6,
+    0 0 50px #9200e6; */
 }
 
 .name {
   font-size: 6vw;
   font-weight: bolder;
-  /* text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #ad00e6,
-    0 0 50px #9200e6; */
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #ad00e6,
+    0 0 50px #9200e6;
   margin-top: 10px;
   margin-bottom: 10px;
 }
